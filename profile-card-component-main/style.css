@@ -1,0 +1,82 @@
+
+  html{
+    overflow: hidden;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* si on dit 200px, contenu + bordure = 200px */
+  }
+  body{
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: hsl(185, 75%, 39%);
+    overflow: hidden;
+  }
+  .back-top{
+    position: absolute;
+    z-index: -1;
+    margin-left: -300px;
+    margin-top: -500px;
+  }
+  .back-bot{
+    position: absolute;
+    z-index: -1;
+    margin-left: 700px;
+    margin-top: 420px;
+  }
+  span{
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .card{
+    box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.50);
+    width: 375px;
+    height: 390px;
+    border-radius: 15px;
+    background-color: white;
+    text-align: center;
+  }
+  .back-card{
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .profile-pic{
+    border: 6px solid;
+    border-color: white;
+    border-radius:50%; /* Permet de faire un rond autour de la photo */
+    margin-top: -60px;
+    position: sticky;
+
+  }
+  .infos{
+    margin-top: 15px;
+  }
+  .ville{
+    font-size: 15px;
+    display: block;
+    margin-top: 15px;
+  }
+  .separator{
+    border: 0.5px solid lightgrey;
+    margin-top: 15px;
+  }
+  .socials{
+    display: flex;
+    justify-content: space-between; /* espace de manière horizontal entre les choses */
+    padding: 20px 50px;
+    text-align: center;
+    margin-top: 15px;
+  }
+  .social-stat{
+    font-size: 12px;
+    display: block; /* Permet de positionner les textes en dessous car retour à la ligne */
+    margin-top: 5px;
+  }
